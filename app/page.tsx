@@ -1,14 +1,9 @@
 import Image from "next/image";
 import Tab from "./components/Tab";
-import SuccesLabel from "./components/succesLabel";
+import ScotchedPhoto from "./components/ScotchedPhoto";
+import StickerLabel from "./components/StickerLabel";
 
-import { Permanent_Marker } from "next/font/google";
-
-const permanentMarker = Permanent_Marker({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--font-permanent-marker",
-});
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -30,19 +25,13 @@ export default function Home() {
         <div className="absolute inset-0 z-2 w-full rounded-b-lg bg-white p-4 mt-6 shadow-lg"></div>
         {/* Front of the folder */}
         <div className=" absolute inset-0 z-3 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg">
+          <StickerLabel text="Barth's Stuff" containerClassName=" -rotate-9 translate-y-1/2" />
 
-          {/* Barth's stuff sticker */}
-          <div className="absolute m-[1.2vw] -rotate-9 bg-white text-gray-800 p-2 rounded-lg">
-            <p className={`${permanentMarker.className} -rotate-3 text-[3vw] md:text-2xl lg:text-3xl`}>Barth's Stuff</p>
-            {/* <div className='absolute before:content-[""] top-0 right-0 border-[0.8vw] border-solid border-t-orange-200 border-r-orange-200 border-b-white border-l-white block w-0 shadow-r-' /> */}
-          </div>
+          <ScotchedPhoto
+            image={{ src: "/photo4.jpg", width: 300, height: 300, alt: "Photo of Author" }}
+            containerClassName=" w-1/2 translate-y-1/2 translate-x-3/4 skew-x-3 rotate-12"
+          />
 
-          {/* Photo and scotch pieces */}
-          <div className="absolute w-1/2 translate-y-1/2 translate-x-3/4 skew-x-3 rotate-12">
-            <Image src="/photo4.jpg" width="300" height="300" alt="photo1" className="w-full border-8 border-white" />
-            <div className="absolute bottom-0 -left-4 w-16 h-6 bg-white/50 transform rotate-45 backdrop-blur-sm" />
-            <div className="absolute top-0 -right-4 w-16 h-6 bg-white/50 transform rotate-45 backdrop-blur-sm" />
-          </div>
           <Image
             src="/label.png"
             width="300"
