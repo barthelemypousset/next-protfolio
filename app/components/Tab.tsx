@@ -1,11 +1,4 @@
 // app/components/Tab.tsx
-import { Kalam } from "next/font/google";
-
-const kalam = Kalam({
-  weight: ["300", "400", "700"],
-  subsets: ["latin"],
-  variable: "--font-kalam",
-});
 
 // We define the "props" that our component will accept.
 interface TabProps {
@@ -29,7 +22,7 @@ const Tab: React.FC<TabProps> = ({ bgColor, text, onClick }) => {
         The href and children (text) are also used from the props.
       */}
       <button type="button" onClick={onClick} className={`${commonTabClasses} ${bgColor} w-full`}>
-        <p className={`${kalam.className} -rotate-3`}>{text}</p>
+        <p className={`font-permanent -rotate-3`}>{text}</p>
       </button>
     </li>
   );
