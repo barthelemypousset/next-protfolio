@@ -1,3 +1,8 @@
+//Todo:
+// - push new component Timeline
+// - cut each tab content in a separate page or component
+// - Finish the about page
+
 "use client"; // Make this a 'client component' (gets executed on client side) instead of on the server natively (server component)
 
 import Image from "next/image";
@@ -9,6 +14,7 @@ import { useState, useEffect } from "react";
 import Card from "./components/Card";
 
 import { Wallpaper, Server, TabletSmartphone, Database } from "lucide-react";
+import { Timeline, TimelineItem } from "./components/Timeline";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<string | null>(null);
@@ -45,7 +51,7 @@ export default function Home() {
   return (
     // The screen is the positioning context for our centered div.
     <div className="relative h-screen bg-zinc-50 dark:bg-stone-600">
-      <div className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100">
+      <div className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100 border-debug">
         {/* Tabs over the folder */}
         <nav className="absolute w-2/3 h-1/6 right-0 z-20 -translate-y-2/3 lg:-translate-y-1/2">
           <ul className="flex w-full h-full gap-x-1">
@@ -66,9 +72,9 @@ export default function Home() {
             <div>
               <div className="flex justify-evenly items-center rounded-lg p-3">
                 <div className="">
-                  <h2 className="text-2xl font-permanent">Who am I ?</h2>
-                  <p className="">Barthélémy POUSSET</p>
-                  <p className="">Fullstack developer - Ex Devops</p>
+                  <h2 className="mb-4 text-xl font-permanent">Who am I ?</h2>
+                  <p className="text-3xl">Barthélémy POUSSET</p>
+                  <p className="text-2xl">Fullstack Developer - Ex Devops</p>
                 </div>
                 <div>
                   <Image
@@ -94,38 +100,35 @@ export default function Home() {
               </div>
               <div className="p-4 m-4 border-2 rounded-2xl border-stone-300">
                 <h2 className="mb-4 text-2xl font-permanent">My Journey</h2>
-                <ol className="relative ml-4 border-s-2 border-blue-400 border-default">
-                  <li className="mb-10 ">
-                    <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 " />
+                <Timeline>
+                  <TimelineItem date="September 2023 - September 2024">
                     <Card
                       title="Bachelor - Designer and Developer of Web and Mobile applications"
-                      icon={<Image src="/lacaps.png" width={100} height={100} alt="logo lacapsule" />}
+                      icon={<Image src="/swisslife.jpeg" width={100} height={100} alt="logo lacapsule" />}
                       text="(EQF level 6) Bootcamp done with LaCapsule"
                       elements={["Backend Developpement", "Frontend Developpement", "Mobile Developement"]}
                       iconColor="bg-white"
                     />
-                  </li>
-                  <li className="mb-10">
-                    <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5" />
+                  </TimelineItem>
+                  <TimelineItem date="January 2017 - August 2023">
                     <Card
                       title="Master - Devops and Cloud Engineer"
-                      icon={<Image src="/ynov.png" width={100} height={100} alt="logo lacapsule" />}
+                      icon={<Image src="/cleverconnect.jpeg" width={100} height={100} alt="logo lacapsule" />}
                       text="(EQF level 7) Formation done with YNOV"
                       elements={["Cloud administration", "CI/CD automation", "Devops Methodology"]}
                       iconColor="bg-white"
                     />
-                  </li>
-                  <li className="mb-10">
-                    <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 " />
+                  </TimelineItem>
+                  <TimelineItem date="2015 - 2017">
                     <Card
                       title="Bachelor - Network and Datacenter Administrator"
-                      icon={<Image src="/cesi.png" width={100} height={100} alt="logo lacapsule" />}
+                      icon={<Image src="/decathlon.jpeg" width={100} height={100} alt="logo lacapsule" />}
                       text="(EQF level 6) Formation done with CESI"
                       elements={["Datacenter administration", "network administration", "Infrastructure maintenance"]}
                       iconColor="bg-white"
                     />
-                  </li>
-                </ol>
+                  </TimelineItem>
+                </Timeline>
               </div>
             </div>
           )}
@@ -177,7 +180,7 @@ export default function Home() {
                     <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 " />
                     <Card
                       title="Bachelor - Designer and Developer of Web and Mobile applications"
-                      icon={<Image src="/lacaps.png" width={100} height={100} alt="logo lacapsule" />}
+                      icon={<Image src="/lacapsule.png" width={100} height={100} alt="logo lacapsule" />}
                       text="(EQF level 6) Bootcamp done with LaCapsule"
                       elements={["Backend Developpement", "Frontend Developpement", "Mobile Developement"]}
                       iconColor="bg-white"
@@ -253,7 +256,7 @@ export default function Home() {
           )}
         </div>
         {/* Front of the folder */}
-        <div className=" absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg">
+        <div className="absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg">
           <StickerLabel text="Barth's Stuff" containerClassName=" -rotate-9 translate-y-1/2" />
 
           <ScotchedPhoto
@@ -269,6 +272,9 @@ export default function Home() {
             className="absolute w-1/2 -left-5 bottom-6 skew-x-3 -rotate-12"
           />
         </div>
+        <p className="absolute -bottom-10 left-0 right-0 text-center text-black">
+          Barthélémy POUSSET 2026 - Github - LinkedIn{" "}
+        </p>
       </div>
     </div>
   );
