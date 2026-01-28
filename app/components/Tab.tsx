@@ -1,13 +1,11 @@
 // app/components/Tab.tsx
 
-// We define the "props" that our component will accept.
 interface TabProps {
   bgColor: string;
   text: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-// This is our Tab component.
 const Tab: React.FC<TabProps> = ({ bgColor, text, onClick }) => {
   // All the repeated styling classes are stored here in one place.
   const commonTabClasses = `
@@ -17,10 +15,6 @@ const Tab: React.FC<TabProps> = ({ bgColor, text, onClick }) => {
 
   return (
     <li className="flex-grow">
-      {/* 
-        We combine the common classes with the unique bgColor prop.
-        The href and children (text) are also used from the props.
-      */}
       <button type="button" onClick={onClick} className={`${commonTabClasses} ${bgColor} w-full`}>
         <p className={`font-permanent -rotate-3`}>{text}</p>
       </button>
