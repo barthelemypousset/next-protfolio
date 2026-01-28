@@ -11,6 +11,7 @@ const Tab: React.FC<TabProps> = ({ bgColor, text, onClick }) => {
   const commonTabClasses = `
     flex justify-center h-full rounded-t-md py-[1.2vw] text-[3vw] md:py-2 md:text-2xl font-medium text-stone-800 shadow-lg
     transition duration-300 ease-in-out hover:-translate-y-1 active:translate-y-1
+    [@media(max-height:450px)]:text-base [@media(max-height:450px)]:py-[1vh]
   `;
 
   return (
