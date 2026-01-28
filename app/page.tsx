@@ -48,6 +48,7 @@ export default function Home() {
   return (
     // The screen is the positioning context for our centered div.
     <div className="relative h-screen bg-zinc-50 dark:bg-stone-600">
+      <TiltScreenModal />
       <div className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100">
         {/* Tabs over the folder */}
         <nav className="absolute w-2/3 h-1/6 right-0 z-20 -translate-y-2/3 lg:-translate-y-1/2">
