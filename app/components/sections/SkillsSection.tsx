@@ -51,7 +51,7 @@ const SkillsSection: React.FC = () => {
           <TimelineItem date="Oct 2026 - Dec 2026">
             <Card
               title="Designer and Developer of Web and Mobile applications"
-              icon={<Image src="/lacapsule.png" width={100} height={100} alt="logo LaCapsule" />}
+              icon={<Image src="/corp/lacapsule.png" width={100} height={100} alt="logo LaCapsule" />}
               iconTitle="LaCapsule"
               text="Bachelor - EQF level 6"
               elements={["Backend Developpement", "Frontend Developpement", "Mobile Developement"]}
@@ -61,7 +61,7 @@ const SkillsSection: React.FC = () => {
           <TimelineItem date="Sept 2016 - June 2017">
             <Card
               title="Devops and Cloud Engineer"
-              icon={<Image src="/ynov.png" width={100} height={100} alt="logo Ynov" />}
+              icon={<Image src="/corp/ynov.png" width={100} height={100} alt="logo Ynov" />}
               iconTitle="Campus Ynov"
               text="Master - EQF level 7"
               elements={["Cloud administration", "CI/CD automation", "Devops Methodology"]}
@@ -71,7 +71,7 @@ const SkillsSection: React.FC = () => {
           <TimelineItem date="Sept 2014 - June 2016">
             <Card
               title="Network and Datacenter Administrator"
-              icon={<Image src="/cesi.png" width={100} height={100} alt="logo Cesi" />}
+              icon={<Image src="/corp/cesi.png" width={100} height={100} alt="logo Cesi" />}
               iconTitle="Cesi"
               text="Bachelor - EQF level 6"
               elements={["Datacenter administration", "network administration", "Infrastructure maintenance"]}
@@ -81,7 +81,7 @@ const SkillsSection: React.FC = () => {
           <TimelineItem date="Sept 2012 - June 2014">
             <Card
               title="Management and maintenance of IT equipment"
-              icon={<Image src="/cesi.png" width={100} height={100} alt="logo Cesi" />}
+              icon={<Image src="/corp/cesi.png" width={100} height={100} alt="logo Cesi" />}
               iconTitle="Cesi"
               text="License - EQF level 5"
               elements={["IT Support", "Employee Formation", "Employee assitance"]}

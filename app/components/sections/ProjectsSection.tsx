@@ -19,7 +19,7 @@ const ProjectsSection: React.FC = () => {
           <Card
             title="Murmure"
             thumbnail={
-              <Image src="/projects/murmure-patchwork1.png" width={600} height={300} alt="screenshots murmure" />
+              <Image src="/projects/murmure-patchwork.jpeg" width={600} height={300} alt="screenshots murmure" />
             }
             elements={["React-native", "expo", "Next.js", "Redux"]}>
             <p className="text-justify mb-4">

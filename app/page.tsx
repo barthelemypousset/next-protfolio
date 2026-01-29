@@ -119,13 +119,13 @@ export default function Home() {
             rel="noopener noreferrer"
             className="absolute w-1/2 translate-y-5/6 translate-x-3/4 rotate-12 flex items-center justify-center skew-x-3 z-10"
             aria-label="A surprise link">
-            <span className="text-8xl" role="img" aria-hidden="true">
+            <span className="text-[10vh]" role="img" aria-hidden="true">
               🤡
             </span>
           </a>
 
           <ScotchedPhoto
-            image={{ src: "/photo4.jpeg", width: 300, height: 300, alt: "Photo of Author" }}
+            image={{ src: "/photo4.jpeg", width: 300, height: 300, alt: "Picture of the Webmaster" }}
             containerClassName=" w-1/2 translate-y-1/3 translate-x-3/4 skew-x-3 rotate-12 z-20"
           />
 
@@ -133,7 +133,7 @@ export default function Home() {
             src="/label.png"
             width="300"
             height="150"
-            alt="Photo of the author"
+            alt="Label of quality"
             className="absolute w-1/2 -left-5 bottom-6 skew-x-3 -rotate-12"
           />
         </div>

@@ -45,7 +45,7 @@ const AboutSection: React.FC = () => {
           <TimelineItem date="mai 2024 - april 2025">
             <Card
               title="Devops / Cloud Engineer"
-              icon={<Image src="/swisslife.jpeg" width={100} height={100} alt="logo swisslife" />}
+              icon={<Image src="/corp/swisslife.jpeg" width={100} height={100} alt="logo swisslife" />}
               iconTitle="SwissLife"
               iconColor="bg-white">
               <p>
@@ -75,7 +75,7 @@ const AboutSection: React.FC = () => {
           <TimelineItem date="july 2019 - april 2024">
             <Card
               title="Devops / Cloud Engineer"
-              icon={<Image src="/cleverconnect.jpeg" width={100} height={100} alt="logo cleverconnect" />}
+              icon={<Image src="/corp/cleverconnect.jpeg" width={100} height={100} alt="logo cleverconnect" />}
               iconTitle="Cleverconnect"
               iconColor="bg-white">
               <p>
@@ -108,7 +108,7 @@ const AboutSection: React.FC = () => {
           <TimelineItem date="November 2017 - June 2019">
             <Card
               title="Sysops Engineer"
-              icon={<Image src="/decathlon.jpeg" width={100} height={100} alt="logo decathlon" />}
+              icon={<Image src="/corp/decathlon.jpeg" width={100} height={100} alt="logo decathlon" />}
               iconTitle="Decathlon"
               iconColor="bg-white">
               <p>
