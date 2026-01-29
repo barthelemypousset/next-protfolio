@@ -1,8 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactForm";
-import Card from "../Card";
-import { Github, Linkedin, Mail, MessageSquareHeart } from "lucide-react";
-import Link from "next/link";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const ContactSection: React.FC = () => {
   return (
@@ -17,28 +15,32 @@ const ContactSection: React.FC = () => {
 
         <div className="flex justify-evenly">
           <div>
-            <Link
+            <a
               href="https://www.linkedin.com/in/barthelemypousset/"
-              className="flex flex-col items-center w-25 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              className="flex flex-col items-center w-25 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              target="_blank"
+              rel="noopener noreferrer">
               <p>LinkedIn</p>
               <Linkedin size={30} strokeWidth={1.75} color="#0A66C2" />
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
+            <a
               href="https://github.com/barthelemypousset/"
-              className="flex flex-col items-center w-25 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              className="flex flex-col items-center w-25 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              target="_blank"
+              rel="noopener noreferrer">
               <p>GitHub</p>
               <Github size={30} strokeWidth={1.75} color="#0FBF3E" />
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
+            <a
               href="mailto:barthelemypousset@gmail.com"
               className="flex flex-col items-center w-25 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <p>Mail</p>
               <Mail size={30} strokeWidth={1.75} color="#c71610" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

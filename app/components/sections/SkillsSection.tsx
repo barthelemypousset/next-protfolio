@@ -50,36 +50,40 @@ const SkillsSection: React.FC = () => {
         <Timeline>
           <TimelineItem date="Oct 2026 - Dec 2026">
             <Card
-              title="Bachelor - Designer and Developer of Web and Mobile applications"
+              title="Designer and Developer of Web and Mobile applications"
               icon={<Image src="/lacapsule.png" width={100} height={100} alt="logo LaCapsule" />}
-              text="(EQF level 6) Bootcamp done with LaCapsule"
+              iconTitle="LaCapsule"
+              text="Bachelor - EQF level 6"
               elements={["Backend Developpement", "Frontend Developpement", "Mobile Developement"]}
               iconColor="bg-white"
             />
           </TimelineItem>
           <TimelineItem date="Sept 2016 - June 2017">
             <Card
-              title="Master - Devops and Cloud Engineer"
+              title="Devops and Cloud Engineer"
               icon={<Image src="/ynov.png" width={100} height={100} alt="logo Ynov" />}
-              text="(EQF level 7) Formation done with Campus YNOV"
+              iconTitle="Campus Ynov"
+              text="Master - EQF level 7"
               elements={["Cloud administration", "CI/CD automation", "Devops Methodology"]}
               iconColor="bg-white"
             />
           </TimelineItem>
           <TimelineItem date="Sept 2014 - June 2016">
             <Card
-              title="Bachelor - Network and Datacenter Administrator"
+              title="Network and Datacenter Administrator"
               icon={<Image src="/cesi.png" width={100} height={100} alt="logo Cesi" />}
-              text="(EQF level 6) Formation done with CESI"
+              iconTitle="Cesi"
+              text="Bachelor - EQF level 6"
               elements={["Datacenter administration", "network administration", "Infrastructure maintenance"]}
               iconColor="bg-white"
             />
           </TimelineItem>
           <TimelineItem date="Sept 2012 - June 2014">
             <Card
-              title="Bachelor - Management and maintenance of IT equipment"
+              title="Management and maintenance of IT equipment"
               icon={<Image src="/cesi.png" width={100} height={100} alt="logo Cesi" />}
-              text="(EQF level 5) Formation done with CESI"
+              iconTitle="Cesi"
+              text="License - EQF level 5"
               elements={["IT Support", "Employee Formation", "Employee assitance"]}
               iconColor="bg-white"
             />

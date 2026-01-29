@@ -11,19 +11,25 @@ import ProjectsSection from "./components/sections/ProjectsSection";
 import ContactSection from "./components/sections/ContactSection";
 import TiltScreenModal from "./components/TiltScreenModal";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [animationClass, setAnimationClass] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = (tabName: string) => {
     if (isAnimating) return;
     setIsAnimating(true);
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = 0;
+    }
     if (activeTab === tabName) {
       setAnimationClass("animate-put-back");
-      setActiveTab(null);
+        setTimeout(() => {
+          setActiveTab(null);
+        }, 800);
     } else {
       if (activeTab) {
         setAnimationClass("animate-put-back");
@@ -65,6 +71,7 @@ export default function Home() {
 
         {/* Document Inside of the folder */}
         <div
+          ref={scrollContainerRef}
           className={`absolute inset-x-0 bottom-0 top-6 z-20 w-full rounded-b-lg bg-lined-paper p-4 shadow-lg text-black overflow-y-auto ${animationClass}`}>
           {activeTab === "About" && <AboutSection />}
           {activeTab === "Skills" && <SkillsSection />}
@@ -88,8 +95,23 @@ export default function Home() {
             className="absolute w-1/2 -left-5 bottom-6 skew-x-3 -rotate-12"
           />
         </div>
-        <p className="absolute -bottom-10 left-0 right-0 text-center text-black">
-          Barthélémy POUSSET 2026 - Github - LinkedIn{" "}
+        <p className="absolute -bottom-10 left-0 right-0 text-center text-white">
+          Barthélémy POUSSET {new Date().getFullYear()} -&nbsp;
+          <a
+            href="https://www.linkedin.com/in/barthelemypousset/"
+            className="text-blue-500 "
+            target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          &nbsp;-&nbsp;
+          <a
+            href="https://github.com/barthelemypousset/"
+            className="text-blue-500 "
+            target="_blank"
+            rel="noopener noreferrer">
+            GitHub
+          </a>
         </p>
       </div>
     </div>

@@ -40,12 +40,13 @@ const AboutSection: React.FC = () => {
       <hr className="h-px m-10 bg-neutral-quaternary" />
 
       <div className="p-4 m-4 border-2 rounded-2xl border-stone-300">
-        <h2 className="mb-4 text-2xl font-permanent">My Journey</h2>
+        <h2 className="mb-4 text-2xl font-permanent">My work experience</h2>
         <Timeline>
           <TimelineItem date="mai 2024 - april 2025">
             <Card
               title="Devops / Cloud Engineer"
               icon={<Image src="/swisslife.jpeg" width={100} height={100} alt="logo swisslife" />}
+              iconTitle="SwissLife"
               iconColor="bg-white">
               <p>
                 <b>Infrastructure as Code</b> project using <b>Terraform</b> to provision a Distributed Jenkins
@@ -75,6 +76,7 @@ const AboutSection: React.FC = () => {
             <Card
               title="Devops / Cloud Engineer"
               icon={<Image src="/cleverconnect.jpeg" width={100} height={100} alt="logo cleverconnect" />}
+              iconTitle="Cleverconnect"
               iconColor="bg-white">
               <p>
                 <b>Automated Delivery of customized Turnkey Recruitment Platforms</b>
@@ -107,6 +109,7 @@ const AboutSection: React.FC = () => {
             <Card
               title="Sysops Engineer"
               icon={<Image src="/decathlon.jpeg" width={100} height={100} alt="logo decathlon" />}
+              iconTitle="Decathlon"
               iconColor="bg-white">
               <p>
                 <b>Global Infrastructure Management:</b> Managed and maintained middleware servers and databases across
