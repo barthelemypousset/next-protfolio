@@ -82,9 +82,20 @@ export default function Home() {
         <div className="absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg">
           <StickerLabel text="Barth's Stuff" containerClassName=" -rotate-9 translate-y-1/2" />
 
+          <a
+            href="https://shattereddisk.github.io/rickroll/rickroll.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute w-1/2 translate-y-5/6 translate-x-3/4 rotate-12 flex items-center justify-center skew-x-3 z-10"
+            aria-label="A surprise link">
+            <span className="text-8xl" role="img" aria-hidden="true">
+              🤡
+            </span>
+          </a>
+
           <ScotchedPhoto
             image={{ src: "/photo4.jpeg", width: 300, height: 300, alt: "Photo of Author" }}
-            containerClassName=" w-1/2 translate-y-1/3 translate-x-3/4 skew-x-3 rotate-12"
+            containerClassName=" w-1/2 translate-y-1/3 translate-x-3/4 skew-x-3 rotate-12 z-20"
           />
 
           <Image
