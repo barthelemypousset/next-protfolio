@@ -18,6 +18,7 @@ export default function Home() {
   const [animationClass, setAnimationClass] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const folderContainerRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = (tabName: string) => {
     if (isAnimating) return;
@@ -45,6 +46,34 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isAnimating) {
+        return;
+      }
+      if (
+        folderContainerRef.current &&
+        !folderContainerRef.current.contains(event.target as Node)
+      ) {
+        if (activeTab) {
+          setIsAnimating(true);
+          setAnimationClass("animate-put-back");
+          setTimeout(() => {
+            setActiveTab(null);
+          }, 800);
+        }
+      }
+    };
+
+    if (activeTab) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activeTab, isAnimating]);
+
+  useEffect(() => {
     if (isAnimating) {
       const timer = setTimeout(() => setIsAnimating(false), 800);
       return () => clearTimeout(timer);
@@ -55,7 +84,9 @@ export default function Home() {
     // The screen is the positioning context for our centered div.
     <div className="relative h-screen bg-zinc-50 dark:bg-stone-600">
       <TiltScreenModal />
-      <div className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100">
+      <div
+        ref={folderContainerRef}
+        className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100">
         {/* Tabs over the folder */}
         <nav className="absolute w-2/3 h-1/6 right-0 z-20 -translate-y-2/3 lg:-translate-y-1/2">
           <ul className="flex w-full h-full gap-x-1">
