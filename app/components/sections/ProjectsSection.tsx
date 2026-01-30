@@ -32,18 +32,36 @@ const ProjectsSection: React.FC = () => {
               Last but not least a tchat is present in the application to discuss about things you have on your mind or
               about the cursus. <br />
               <br />
-              Try a live demo of this project: Live Demo
+              Try a live demo of this project: Not available yet
               <br />
               <br />
               View the source code for the Frontend:&nbsp;
-              <Link href="https://github.com/barthelemypousset/Murmure-Front" className="text-blue-500 underline">
+              <a
+                href="https://github.com/barthelemypousset/Murmure-Front"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
                 GitHub
-              </Link>
+              </a>
               <br />
               View the source code for the Backend:&nbsp;
-              <Link href="https://github.com/barthelemypousset/Murmure-Back" className="text-blue-500 underline">
+              <a
+                href="https://github.com/barthelemypousset/Murmure-Back"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
                 GitHub
-              </Link>
+              </a>
+              <br />
+              <br />
+              Read the analysis, organisation and built of this project (in french):&nbsp;
+              <a
+                href="/docs/murmure-dossier.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
+                Murmure - Project
+              </a>
             </p>
           </Card>
           <Card
@@ -68,9 +86,13 @@ const ProjectsSection: React.FC = () => {
               <br />
               <br />
               View the source code of this project and try it yourself:&nbsp;
-              <Link href="https://github.com/barthelemypousset/retrolove" className="text-blue-500 underline">
+              <a
+                href="https://github.com/barthelemypousset/retrolove"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
                 GitHub
-              </Link>
+              </a>
             </p>
           </Card>
           <Card
@@ -91,9 +113,13 @@ const ProjectsSection: React.FC = () => {
               <br />
               <br />
               View the website of this project:&nbsp;
-              <Link href="https://www.puzzle-bricks.fr" className="text-blue-500 underline">
+              <a
+                href="https://www.puzzle-bricks.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
                 www.puzzle-bricks.fr
-              </Link>
+              </a>
             </p>
           </Card>
           <Card
@@ -105,9 +131,13 @@ const ProjectsSection: React.FC = () => {
               <br />
               <br />
               View the source code of this project and try it yourself:&nbsp;
-              <Link href="https://github.com/barthelemypousset/next-protfolio" className="text-blue-500 underline">
+              <a
+                href="https://github.com/barthelemypousset/next-protfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
                 GitHub
-              </Link>
+              </a>
             </p>
           </Card>
           <Card

@@ -28,12 +28,24 @@ const AboutSection: React.FC = () => {
       <div className="p-4 m-4 border-2 rounded-2xl border-stone-300">
         <h2 className="mb-4 text-2xl font-permanent">Presentation</h2>
         <p className="text-justify">
-          After a 7-year career as a <b>DevOps Engineer</b>, I decided to pivot towards the world of{" "}
-          <b>application development</b> with a sensibility for pretty and efficient user interface. <br />
-          <br />I recently completed a Bachelor in Web & Mobile Development, focusing on the <b>React ecosystem</b>. My
-          goal is to leverage my infrastructure knowledge to build robust and scalable mobile applications. <br />
-          <br />I also emphasize self-training, I like to discover new tools and keep up to date with IT trends and
-          news.
+          Hello there and welcome on my portfolio ! I built it with my own hands :) <br />
+          <br />
+          After 7 years as a <b>DevOps Engineer</b>, I decided to switch gears and explore the exciting world of{" "}
+          <b>application development</b>. I’m passionate about creating user interfaces that are both visually unique
+          and also simple to use. <br />I recently finished my Bachelor’s degree in Web & Mobile Development, with a special
+          focus on the <b>React ecosystem</b>. My goal is to use my knowledge of infrastructure to build strong and
+          scalable mobile apps. <br />
+          I also love learning on my own. I’m always on the lookout for new tools and staying up-to-date with the latest
+          IT trends and news. <br />
+          <br />
+          <span className="text-xl">-&gt; Download my CV as a PDF: &nbsp;</span>
+          <a
+            href="/docs/cv-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline text-xl">
+            Here
+          </a>
         </p>
       </div>
 
