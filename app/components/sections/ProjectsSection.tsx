@@ -96,6 +96,24 @@ const ProjectsSection: React.FC = () => {
             </p>
           </Card>
           <Card
+            title="Next Portfolio (This website !)"
+            thumbnail={<Image src="/projects/portfolio.png" width={400} height={300} alt="logo lacapsule" />}
+            elements={["React", "Next.js", "tailwind", "Vercel"]}>
+            <p className="text-justify mb-4">
+              Next portfolio is the very website you are scroling on right now :)
+              <br />
+              <br />
+              View the source code of this project and try it yourself:&nbsp;
+              <a
+                href="https://github.com/barthelemypousset/next-protfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
+                GitHub
+              </a>
+            </p>
+          </Card>
+          <Card
             title="Puzzle-Bricks"
             thumbnail={
               <Image
@@ -119,24 +137,6 @@ const ProjectsSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-blue-500 underline">
                 www.puzzle-bricks.fr
-              </a>
-            </p>
-          </Card>
-          <Card
-            title="Next Portfolio (This website !)"
-            thumbnail={<Image src="/projects/portfolio.png" width={400} height={300} alt="logo lacapsule" />}
-            elements={["React", "Next.js", "tailwind", "Vercel"]}>
-            <p className="text-justify mb-4">
-              Next portfolio is the very website you are scroling on right now :)
-              <br />
-              <br />
-              View the source code of this project and try it yourself:&nbsp;
-              <a
-                href="https://github.com/barthelemypousset/next-protfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 underline">
-                GitHub
               </a>
             </p>
           </Card>

@@ -10,10 +10,10 @@ const ContactSection: React.FC = () => {
       </div>
       <hr className="h-px m-6 bg-neutral-quaternary" />
 
-      <div className="w-full md:w-1/2 md:mx-auto">
+      <div className="w-full">
         <h3 className="text-xl font-bold text-center">Via my socials</h3>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly md:justify-center">
           <div>
             <a
               href="https://www.linkedin.com/in/barthelemypousset/"

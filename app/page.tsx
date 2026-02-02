@@ -82,7 +82,7 @@ export default function Home() {
 
   return (
     // The screen is the positioning context for our centered div.
-    <div className="relative h-screen bg-zinc-50 dark:bg-stone-600">
+    <div className="relative h-screen bg-sky-50 dark:bg-stone-600">
       <TiltScreenModal />
       <div
         ref={folderContainerRef}
@@ -126,7 +126,7 @@ export default function Home() {
             className="absolute w-1/2 -left-5 bottom-6 skew-x-3 -rotate-12"
           />
         </div>
-        <p className="absolute -bottom-10 left-0 right-0 text-center text-white">
+        <p className="absolute -bottom-10 left-0 right-0 text-center text-stone-700 dark:text-white">
           Barthélémy POUSSET {new Date().getFullYear()} -&nbsp;
           <a
             href="https://www.linkedin.com/in/barthelemypousset/"

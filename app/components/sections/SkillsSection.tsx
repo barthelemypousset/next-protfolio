@@ -25,7 +25,7 @@ const SkillsSection: React.FC = () => {
           <Card
             title="Backend Development"
             icon={<Server size={24} strokeWidth={1.75} color="#ffffff" />}
-            elements={["Node.js", "Express.js", "PostgreSQL", "MongoDB", "Rest API"]}
+            elements={["Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "Rest API" ]}
             iconColor="bg-emerald-500"
           />
           <Card
