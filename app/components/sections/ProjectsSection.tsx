@@ -32,7 +32,14 @@ const ProjectsSection: React.FC = () => {
               Last but not least a tchat is present in the application to discuss about things you have on your mind or
               about the cursus. <br />
               <br />
-              Try a live demo of this project: Not available yet
+              Try a live demo of this project: &nbsp;
+              <a
+                href="https://murmure.expo.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
+                Murmure
+              </a>
               <br />
               <br />
               View the source code for the Frontend:&nbsp;
