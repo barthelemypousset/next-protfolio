@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
           <br />
           <span className="text-xl">-&gt; Download my CV as a PDF: &nbsp;</span>
           <a
-            href="/docs/cv-2026.pdf"
+            href="https://app.box.com/s/8hapxy4nwcn7kslud70pb5dz4c84yxem"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 underline text-xl">

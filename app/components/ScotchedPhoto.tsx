@@ -32,7 +32,7 @@ const ScotchedPhoto: React.FC<ScotchedPhotoProps> = ({ image, containerClassName
   return (
     <div className={`${containerClassName || ""} absolute`}>
       <a
-        href="https://shattereddisk.github.io/rickroll/rickroll.mp4"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         target="_blank"
         rel="noopener noreferrer"
         className="absolute w-1/2 translate-y-1/2 translate-x-1/2 rotate-12 flex items-center justify-center"

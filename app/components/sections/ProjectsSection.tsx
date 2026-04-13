@@ -21,7 +21,7 @@ const ProjectsSection: React.FC = () => {
             thumbnail={
               <Image src="/projects/murmure-patchwork.jpeg" width={600} height={300} alt="screenshots murmure" />
             }
-            elements={["React-native", "expo", "Next.js", "Redux"]}>
+            elements={["React-native", "expo", "Redux"]}>
             <p className="text-justify mb-4">
               Murmure is a psychology application that aim to help the user learn more about himself and about how his
               mind works. <br />
@@ -68,6 +68,31 @@ const ProjectsSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-blue-500 underline">
                 Murmure - Project
+              </a>
+            </p>
+          </Card>
+          <Card
+            title="Coins-App"
+            thumbnail={
+              <Image src="/projects/coin-app-patchwork.jpeg" width={300} height={600} alt="screenshots coin-app" />
+            }
+            elements={["React-native", "expo", "TanStack Query"]}>
+            <p className="text-justify mb-4">
+              A simple React Native application that fetches and displays cryptocurrency coins from Delta API (crypto).
+              The app allows users to browse coins, view details for a specific coin, and refresh the data. <br />
+              <br />
+              <b>
+                The project focuses on clean architecture, data fetching strategy, error handling, and offline behavior
+                rather than UI complexity.
+              </b>
+              <br /> <br />
+              View the source code of this APP:&nbsp;
+              <a
+                href="https://github.com/barthelemypousset/coins-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline">
+                GitHub
               </a>
             </p>
           </Card>
